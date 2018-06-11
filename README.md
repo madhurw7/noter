@@ -1,5 +1,13 @@
 # Noter
 
+
+Noter is a minimal Angular app which allows the user to create and remove notes. [Manan Agarwal's Prohject](https://github.com/MananAgarwal/Noter) motivated me to create this in angular. The app has been integrated Firebase's RealTime Database and uses Firebase Hosting to host it [here](https://noter-e2fb5.firebaseapp.com/). 
+
+Work in Progress: Adding functionality to edit Notes
+
+ToDo:   Ability to choose color of the notes.
+        Making the notes responsive.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
 
 ## Development server
