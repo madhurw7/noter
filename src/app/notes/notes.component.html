@@ -15,7 +15,7 @@
 
 
 <div class="flex-class">
-<div *ngFor = "let note of notesArr" class="alert alert-primary" style="width: 250px;">
+<div *ngFor = "let note of notesArr" class="alert alert-primary" style="min-width: 250px; max-width: 300px; ">
   <h2>{{ note.title }}</h2>
   <p>{{ note.content }}</p>
   <button class="btn btn-primary btn-sm" disabled = "true">Edit</button>
