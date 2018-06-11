@@ -1,0 +1,6 @@
+.flex-class{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

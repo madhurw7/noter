@@ -1,3 +1,24 @@
-<p>
-  notes works!
-</p>
+<form #f = "ngForm" (ngSubmit)="onSubmit(f)">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" id="title" class="form-control" name = "title" ngModel placeholder="Enter title here.">
+      
+    <label for="content">Content</label>
+    <input  type="text" id="content" class="form-control" name = "content" ngModel placeholder="Enter content here.">
+    
+
+  </div>
+  <button class="btn btn-primary" type="submit">Add Note</button>
+  
+</form>
+
+
+
+<div class="flex-class">
+<div *ngFor = "let note of notesArr" class="alert alert-primary" style="width: 250px;">
+  <h2>{{ note.title }}</h2>
+  <p>{{ note.content }}</p>
+  <button class="btn btn-primary btn-sm" disabled = "true">Edit</button>
+  <button class="btn btn-link btn-sm" (click) = "deleteNote(note)">Delete</button>
+</div>
+</div>
